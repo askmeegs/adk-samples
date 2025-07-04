@@ -21,7 +21,9 @@ from .tools.tools import (
     get_student_progress,
     generate_topic_quiz,
     evaluate_quiz_answer,
-    store_quiz_results
+    store_quiz_results,
+    analyze_student_performance,
+    generate_adaptive_questions
 )
 
 root_agent = Agent(
@@ -33,6 +35,8 @@ root_agent = Agent(
         get_student_progress,
         generate_topic_quiz,
         evaluate_quiz_answer,
-        store_quiz_results
+        store_quiz_results,
+        analyze_student_performance,
+        generate_adaptive_questions
     ],
 )
